@@ -9,7 +9,7 @@
 ---
 
 <div align="center">
-  <img src="readme/homePage.jpg" alt="Skillbridge Banner" width="100%" />
+  <img src="assets/img/portfolio-home.png" alt="Skillbridge Banner" width="100%" />
   
   <p align="center">
     A modern, responsive education platform landing page built with Next.js, TypeScript, and Tailwind CSS
