@@ -1,0 +1,359 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+/* Contact Card */
+.contact-card {
+  width: 100%;
+  max-width: 1024px;
+  background: rgba(13, 78, 17, 0.2);
+  backdrop-filter: blur(16px);
+  border: 2px solid #0da53e;
+  border-radius: 12px;
+  padding: 24px 16px;
+  margin: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .contact-card {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-card {
+    margin: 0 auto;
+    margin-top: -28px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .contact-card {
+    margin-top: 4px;
+  }
+}
+
+/* Card Header */
+.card-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding: 12px 0;
+}
+
+@media (min-width: 1024px) {
+  .card-title {
+    font-size: 3rem;
+  }
+}
+
+/* Card Content */
+.card-content {
+  width: 100%;
+}
+
+/* Form Styles */
+.contact-form {
+  width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Input Groups */
+.input-group {
+  position: relative;
+  z-index: 999;
+}
+
+.textarea-group {
+  grid-column: 1 / -1;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Input Labels */
+.input-label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-icon {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+  fill: currentColor;
+}
+
+/* Form Inputs */
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+  z-index: 9999px;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: #0da53e;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(13, 165, 62, 0.1);
+}
+
+.form-input:valid,
+.form-select:valid,
+.form-textarea:valid {
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.form-input:invalid:not(:placeholder-shown),
+.form-select:invalid:not(:placeholder-shown),
+.form-textarea:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+}
+
+/* Placeholder Styles */
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+/* Select Specific Styles */
+.form-select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+.form-select option {
+  background: #1f2937;
+  color: white;
+  padding: 8px;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.select-arrow svg {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+}
+
+/* Textarea Specific */
+.form-textarea {
+  padding: 12px 16px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Focus States for Labels */
+.form-input:focus + .input-label,
+.form-input:not(:placeholder-shown) + .input-label,
+.form-select:focus + .input-label,
+.form-select:valid + .input-label {
+  transform: translateY(-200%);
+  font-size: 12px;
+  color: #0da53e;
+}
+
+/* Form Footer */
+.form-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background: #166534;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-button:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(22, 101, 52, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Loading Animation (CSS-only alternative) */
+.submit-button:disabled::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error States */
+.form-input:invalid:not(:placeholder-shown),
+.form-select:invalid:not(:placeholder-shown),
+.form-textarea:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.05);
+}
+
+/* Success States */
+.form-input:valid:not(:placeholder-shown),
+.form-select:valid:not(:placeholder-shown),
+.form-textarea:valid:not(:placeholder-shown) {
+  border-color: rgba(34, 197, 94, 0.5);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .contact-card {
+    padding: 16px 12px;
+    margin: 8px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Custom Scrollbar for Textarea */
+.form-textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-textarea::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.form-textarea::-webkit-scrollbar-thumb {
+  background: rgba(13, 165, 62, 0.5);
+  border-radius: 4px;
+}
+
+.form-textarea::-webkit-scrollbar-thumb:hover {
+  background: rgba(13, 165, 62, 0.7);
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .form-input,
+  .form-select,
+  .form-textarea {
+    border-width: 3px;
+  }
+
+  .submit-button {
+    border: 2px solid white;
+  }
+}
+
+/* Focus Visible for Better Accessibility */
+.form-input:focus-visible,
+.form-select:focus-visible,
+.form-textarea:focus-visible,
+.submit-button:focus-visible {
+  outline: 2px solid #0da53e;
+  outline-offset: 2px;
+}
