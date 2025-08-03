@@ -92,13 +92,10 @@ portfolio/
 ├── index.html              # Main HTML file
 ├── styles.css              # Contact section styles
 ├── assets/                 # Images and media
-│   ├── images/
+│   ├── img/
 │   │   ├── profile.webp   # Optimized profile picture
 │   │   ├── hero-bg.jpg    # Hero section background
-│   │   └── projects/      # Project thumbnails
 │   └── icons/             # Custom icon assets
-├── docs/                   # Documentation
-│   └── DESIGN.md          # Design decisions and rationale
 └── README.md              # Project documentation (this file)
 ```
 
@@ -107,7 +104,7 @@ portfolio/
 ## 🚀 How to View This Project
 
 ### Option 1: Live Demo (Recommended)
-🔗 **[View Live Portfolio](https://yourusername.github.io/portfolio)**
+🔗 **[View Live Portfolio](https://solobdev.github.io/portfolio-hackathon/)**
 
 ### Option 2: Local Development
 
@@ -125,19 +122,6 @@ portfolio/
    xdg-open index.html # Linux
    ```
 
-3. **Or use a local server (optional)**
-   ```bash
-   # Python 3
-   python -m http.server 8000
-   
-   # Python 2
-   python -m SimpleHTTPServer 8000
-   
-   # Node.js (if you have it installed)
-   npx serve .
-   ```
-
----
 
 ## ✅ Hackathon Requirements Compliance
 
@@ -219,16 +203,16 @@ While this version meets all hackathon requirements, potential future improvemen
 
 ## 👨‍💻 About the Developer
 
-**[Your Name]**
+**Solomon Belay**
 - 🎓 PLP Academy July 2025 Cohort
 - 💼 Aspiring Full-Stack Developer
-- 🌍 Based in [Your Location]
+- 🌍 Based in Addis Ababa, Ethiopia
 
 ### Connect With Me
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/solobdev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/solomon-belay)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_solomon.belay)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:solomon.belayu@gmail.com)
 
 ---
 
@@ -246,7 +230,7 @@ This project is created for educational purposes as part of the PLP Academy Hack
 
 <div align="center">
 
-**Built with ❤️ and lots of ☕ by [Your Name]**
+**Built with ❤️ and lots of ☕ by [Solomon Belay]**
 
 *PLP Academy July 2025 Cohort*
 
