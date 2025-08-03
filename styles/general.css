@@ -1,0 +1,133 @@
+/* ===========================
+   FONTS
+=========================== */
+@font-face {
+   font-family: "MervaleScript-Regular";
+   src: url("./assets/fonts/MervaleScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Allura";
+   src: url("./assets/fonts/Allura-Regular.otf") format("truetype");
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Satisfy";
+   src: url("./assets/fonts/Satisfy-Regular.ttf") format("truetype");
+}
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+:root {
+   --background: hsl(0, 3%, 6%);
+   --foreground: hsl(240, 4%, 95%);
+   --primary: hsl(120 54% 34%);
+   --primary-foreground: #fff;
+   --border: hsl(240 5.9% 90%);
+   --radius: 0.5rem;
+   --primary-color: #193a1e;
+   --secondary-color: #01230e;
+   --text-color: white;
+   --active-color: darkgreen;
+   --primary-green: #2BB32A;
+   --dark-bg: rgba(61, 84, 77, 0.24);
+   --text-white: #FFFFFF;
+   --blur-effect: blur(6px);
+   --border-radius: 32px;
+   --primary-green: #0BA376;
+   --text-gray: #ADB2B1;
+   --dark-gray: #345e49;
+   --primary-blue: #00bbff;
+   --card-bg: #3D544D;
+   --green-hover: #0BA376;
+   --primary-blue: #00bbff;
+   --primary-green: #0BA376;
+   --dark-green: #1C4237;
+   --darker-green: #021812;
+   --text-gray: #888;
+   --text-light: #CBDBDB;
+   --tech-blue: #5fd4ff;
+   --tech-green: #00bb38;
+   --divider-color: #615564;
+   --gray-700: #4A5568;
+   --gray-400: #A0AEC0;
+   --gray-500: #718096;
+   --card-bgs: rgba(39, 50, 47, 0.24);
+   --icon-bg: #3D544D;
+
+
+}
+
+.dark {
+   --background: hsl(240 10% 3.9%);
+   --foreground: #fff;
+   --primary: #fff;
+}
+
+/* ===========================
+   BASE STYLES
+=========================== */
+html {
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+   scrollbar-color: #25da34 #107bb1;
+   background: var(--background);
+
+
+}
+
+::-webkit-scrollbar {
+   width: 12px;
+   height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 6px;
+   border: 3px solid transparent;
+   background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+   background: #f1f1f1;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border-color: var(--border);
+
+}
+
+body {
+
+   color: var(--foreground);
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   position: relative;
+   background: url("../assets/img/bg.png");
+   background-size: cover;
+   background-position: center;
+   /* z-index: -1; */
+}
+
+body ::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   /* background: url("./assets/img/bg.png");
+   background-size: cover;
+   background-position: center;
+   z-index: -1; */
+}
