@@ -42,6 +42,15 @@
    --primary-blue: #00bbff;
    --card-bg: #3D544D;
    --green-hover: #0BA376;
+   --primary-blue: #00bbff;
+   --primary-green: #0BA376;
+   --dark-green: #1C4237;
+   --darker-green: #021812;
+   --text-gray: #888;
+   --text-light: #CBDBDB;
+   --tech-blue: #5fd4ff;
+   --tech-green: #00bb38;
+   --divider-color: #615564;
 
 
 }
@@ -1879,4 +1888,361 @@ select {
       font-size: 1.5rem;
       /* 24px */
    }
+}
+
+.education-section {
+   margin-bottom: 2.5rem;
+}
+
+.education-header {
+   position: relative;
+   z-index: 10;
+}
+
+.education-title {
+   font-size: 1.75rem;
+   font-weight: 600;
+   position: relative;
+   z-index: 10;
+   margin: 0;
+}
+
+.point-image {
+   position: relative;
+   bottom: 1.5rem;
+   z-index: 0;
+   margin-left: 8rem;
+   width: 3rem;
+}
+
+/* Department Grid */
+.department-grid {
+   display: grid;
+   grid-template-areas: 'site dept focus desc';
+   gap: 0.75rem;
+   position: relative;
+   z-index: 10;
+   margin-top: 1rem;
+   margin-left: 0.5rem;
+}
+
+/* Year/Site Column */
+.year-site-column {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   color: var(--text-gray);
+   grid-area: site;
+}
+
+.year {
+   font-size: 0.75rem;
+}
+
+.duration {
+   font-size: 0.875rem;
+}
+
+.site-short {
+   font-size: 0.875rem;
+}
+
+.site-long {
+   font-size: 0.875rem;
+   color: #5fa6c0;
+}
+
+/* Department Bullet */
+.department-bullet {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   grid-area: dept;
+}
+
+.bullet-outer {
+   width: 1.25rem;
+   height: 1.25rem;
+   background-color: var(--dark-green);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   z-index: 10;
+}
+
+.bullet-middle {
+   width: 0.75rem;
+   height: 0.75rem;
+   background-color: var(--primary-green);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.bullet-inner {
+   width: 0.3125rem;
+   height: 0.3125rem;
+   background-color: var(--darker-green);
+   border-radius: 50%;
+}
+
+.divider-line {
+   position: relative;
+   top: 1rem;
+   right: 1.875rem;
+   width: 400%;
+   transform: rotate(90deg);
+   background-color: var(--divider-color);
+   height: 1px;
+   z-index: 0;
+}
+
+/* Department Info */
+.department-info {
+   display: flex;
+   flex-direction: column;
+   grid-area: desc;
+   width: 10rem;
+   margin-bottom: 0.5rem;
+}
+
+.department-title {
+   font-size: 1.125rem;
+   color: var(--primary-blue);
+   font-weight: 600;
+   letter-spacing: 0.05em;
+   margin-bottom: 0.5rem;
+}
+
+.department-description {
+   font-size: 0.75rem;
+   color: var(--text-light);
+}
+
+.department-tech {
+   font-size: 0.625rem;
+   color: var(--tech-blue);
+   font-family: sans-serif;
+   font-weight: 300;
+   margin-top: 0.25rem;
+}
+
+.tech-label {
+   color: var(--tech-green);
+   font-size: 0.75rem;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 480px) {
+   .education-title {
+      font-size: 1.875rem;
+   }
+
+   .point-image {
+      bottom: 2.5rem;
+      width: 4rem;
+      margin-left: 9rem;
+   }
+
+   .department-grid {
+      gap: 1rem;
+      margin-left: 1rem;
+   }
+
+   .department-info {
+      width: auto;
+      margin-bottom: 1rem;
+   }
+}
+
+@media (min-width: 640px) {
+   .point-image {
+      width: 5rem;
+      margin-left: 10rem;
+   }
+
+   .department-grid {
+      gap: 1.5rem;
+      margin-left: 1.5rem;
+   }
+
+   .department-title {
+      font-size: 1.25rem;
+   }
+
+   .department-description {
+      font-size: 0.875rem;
+   }
+
+   .department-tech {
+      font-size: 0.75rem;
+   }
+
+   .tech-label {
+      font-size: 0.875rem;
+   }
+}
+
+@media (min-width: 768px) {
+   .point-image {
+      width: 6rem;
+      margin-left: 12rem;
+   }
+
+   .department-grid {
+      gap: 2rem;
+      margin-left: 2rem;
+   }
+}
+
+@media (min-width: 1024px) {
+   .point-image {
+      width: 6rem;
+      margin-left: 14rem;
+   }
+
+   .department-grid {
+      gap: 2.5rem;
+      margin-left: 2.5rem;
+   }
+
+   .department-info {
+      margin-bottom: 2rem;
+   }
+}
+
+@media (min-width: 1280px) {
+   .point-image {
+      width: 7rem;
+      margin-left: 16rem;
+   }
+
+   .department-grid {
+      gap: 3rem;
+      margin-left: 3rem;
+   }
+}
+
+@media (min-width: 1536px) {
+   .point-image {
+      width: 8rem;
+      margin-left: 18rem;
+   }
+}
+
+.education-section {
+  font-family: 'Poppins', sans-serif;
+  margin-right: 3rem;
+  padding: 3rem 1rem;
+}
+
+/* Badge */
+.resume-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+  margin: 3rem auto 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(0, 187, 255, 0.05);
+  font-weight: 600;
+  text-align: center;
+}
+
+.resume-badge svg {
+  margin-top: 2px;
+}
+
+.resume-text {
+  color: #00bbff;
+  white-space: nowrap;
+}
+
+/* Title */
+.resume-title-wrap {
+  position: relative;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.resume-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: bold;
+  margin-top: 5rem;
+  z-index: 10;
+  position: relative;
+  color: white;
+}
+
+/* Decorative Point */
+.point-image {
+  position: absolute;
+  left: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  opacity: 0.8;
+}
+
+/* Grid Layout */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1240px;
+  margin: 2rem auto 5rem auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Education & Skills */
+.education, .skills {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sub-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #00bbff;
+  margin-bottom: 1.5rem;
+}
+
+.edu-item {
+  margin-bottom: 1rem;
+}
+
+.edu-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.edu-item p {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
