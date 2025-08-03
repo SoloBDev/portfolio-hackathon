@@ -12,7 +12,7 @@
   <img src="assets/img/portfolio-home.png" alt="Skillbridge Banner" width="100%" />
   
   <p align="center">
-    A modern, responsive education platform landing page built with Next.js, TypeScript, and Tailwind CSS
+    A modern, responsive education platform landing page built with HMTL && CSS only.
     <br />
     <a href="https://solobdev.github.io/portfolio-hackathon/"><strong>View Live »</strong></a>
     <br />
