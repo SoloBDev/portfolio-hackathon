@@ -1,0 +1,9 @@
+<svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0_408_134" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="180" height="180">
+    <circle cx="90" cy="90" r="90" fill="black"/>
+  </mask>
+  <g mask="url(#mask0_408_134)">
+    <circle cx="90" cy="90" r="90" fill="white"/>
+    <path d="M120 150L73.3 75H60V124.7H67.7V83.3L110 150H120ZM113.3 75V124.7H121.3V75H113.3Z" fill="black"/>
+  </g>
+</svg>
